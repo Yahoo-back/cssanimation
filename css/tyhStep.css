@@ -1,0 +1,314 @@
+html {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 748px;
+}
+body{
+    background: url(../images/tyhbgImg.png) no-repeat center center;
+    height: 100%;
+    background-size: cover;
+    min-width: 320px;
+    max-width: 750px;
+}
+#app {
+    margin: 0 auto;
+    text-align: center;
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topSlot{
+}
+.navTop{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.homeContent {
+    margin-top: 40px;
+}
+.iconImg{
+    margin: 20px 0 0 -35px;
+}
+h3{
+    margin-left: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+.moveImg{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: url(../images/solid.png) no-repeat center center;
+    background-size: 100% auto;
+    position: relative;
+}
+.changeContainer{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    color: #4C5CC5;
+    font-size: 17px;
+    padding-top: 25px;
+}
+.changeContainer img{
+    width: 50%;
+}
+.intro{
+    margin-top: 10px;
+    height: 23px;
+    line-height: 23px;
+}
+.van-icon{
+color: #fff;
+}
+.showImg{
+    margin-top: 345px;
+}
+img {
+        width: 100%;
+        height: 100%;
+    }
+#showImg1 {
+    width: 90%;
+    margin-left: 5%;
+    display: none;
+}
+#showImg2 {
+    width: 90%;
+    margin-left: 5%;
+    display: none;
+}
+#showImg3 {
+    width: 90%;
+    margin-left: 5%;
+    display: none;
+}
+#showImg4 {
+    width: 90%;
+    margin-left: 5%;
+    display: none;
+}
+#img1 {
+    display: none;
+    transition:all 1s linear 0.3s;
+}
+#img2 {
+    display: none;
+    margin-top: -5px;
+    transition:all 1s linear 0.3s;
+}
+#img3 {
+    width: 92%;
+    margin-left: 4%;
+    display: none;
+    width: 92%;
+    margin-top: -5px;
+    transition:all 1s linear 0.3s;
+}
+#img4 {
+    display: none;
+    transition:all 1s linear 0.3s;
+}
+.move{
+    margin: 0 auto;
+    width: 60%;
+    margin-left: 25%;
+}
+.circle_div{
+    position:absolute;
+    cursor:pointer;
+    width:200px;
+    height:200px;
+    margin-top: 80px;
+}
+.circle_div:hover .circle_rate{
+    animation-timing-function: ease;
+    animation-duration:3s;
+}
+.circle_rate{
+    width:100%;
+    height:100%;  
+    position: absolute;
+    top:0;left:0;
+    z-index:1;  
+    transition: all;  
+    transform-origin: center;  
+    animation-fill-mode: both;  
+    animation-duration: 12s;  
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;  
+}
+.rotate-out{
+    animation-name: rotate-out ;
+    width: 92%;
+    height: 92%;
+    top: 4%;
+    left: 4%;
+}
+.rotate-in{
+    animation-name: rotate-in;
+}
+@keyframes rotate-out{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate-out{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@-ms-keyframes rotate-out{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@-webkit-keyframes rotate-out{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes rotate-in{ 
+    from{transform: rotate(360deg);} to{transform: rotate(0deg);} 
+}
+@-moz-keyframes rotate-in{ 
+    from{transform: rotate(360deg);} to{transform: rotate(0deg);} 
+}
+@-ms-keyframes rotate-in{ 
+    from{transform: rotate(360deg);} to{transform: rotate(0deg);} 
+}
+@-webkit-keyframes rotate-in{ 
+    from{transform: rotate(360deg);} to{transform: rotate(0deg);} 
+}
+@media screen and (max-width:320px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 19%;
+    }
+    .showImg {
+        margin-top: 265px;
+    }
+}
+@media screen and (min-width:321px)  and (max-width:359px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 20%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:360px)  and (max-width:380px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 23%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:381px)  and (max-width:410px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 24%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:411px)  and (max-width:430px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 26%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:431px)  and (max-width:500px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 28%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:501px)  and (max-width:550px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 30%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:551px)  and (max-width:600px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 33%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:601px)  and (max-width:650px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 36%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:651px)  and (max-width:700px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 39%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen and (min-width:701px)  and (max-width:748px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 33%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}
+@media screen  and (min-width:749px) {
+    .circle_div{
+        margin-top: 40px;
+    }
+    .move{
+        margin-left: 35%;
+    }
+    .showImg {
+        margin-top: 270px;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="4;URL=http://www.baidu.com" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <!-- 引入样式文件 -->
+    <link href="css/tyhStep.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.8/lib/index.css" />
+    <!-- 引入 Vue 和 Vant 的 JS 文件 -->
+    <script src="./js/vue.min.js"></script>
+    <script src="./js/vant.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.8/lib/vant.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="app">
+        <div class="homeContainer">
+            <div class="topSlot"></div>
+            <div class="navTop">
+              <div class="iconImg">
+                <van-icon name="arrow-left" size="18px" @click="goBack()" />
+              </div>
+              <h3>认证成功</h3>
+              <span></span>
+            </div>
+            <div class="move">
+                <div class="circle_div">
+                    <img class="circle_rate rotate-in" src="./images/outside.png"/>
+                    <img class="circle_rate rotate-out" src="./images/inside.png"/>
+                    <div class="moveImg">
+                        <div class="changeContainer">
+                                <div id="img1"  >
+                                    <img src="./images/icon1.png">
+                                    <div class="intro">
+                                        <div class="intro1">测试1</div>
+                                        <div class="intro2">成功</div>
+                                    </div>
+                                </div>
+                                <div id="img2"  >
+                                    <img src="./images/icon2.png" style="height: 50px;">
+                                    <div class="intro">
+                                        <div class="intro1">测试2</div>
+                                        <div class="intro2">成功</div>
+                                    </div>
+                                </div>
+                                <div id="img3"  >
+                                    <img src="./images/icon3.png" style="height: 50px;">
+                                    <div class="intro">
+                                        <div class="intro1">测试3</div>
+                                        <div class="intro2">成功</div>
+                                    </div>
+                                </div>
+                                <div id="img4"  >
+                                    <img src="./images/icon4.png">
+                                    <div class="intro">
+                                        <div class="intro1">测试4</div>
+                                        <div class="intro2">成功</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showImg">
+            <div id="showImg1">
+                <img src="./images/sf.png">
+            </div>
+            <div id="showImg2">
+                <img src="./images/black.png">
+            </div>
+            <div id="showImg3">
+                <img src="./images/mobile.png" >
+            </div>
+            <div id="showImg4">
+                <img src="./images/bank.png" >
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data() {
+          return {
+          };
+        },
+        created () {
+           
+            setTimeout(function() {
+                var img1 = document.getElementById('img1');
+                img1.style.display = "block"
+                $('#showImg1').fadeIn();
+                }, 500);
+            setTimeout(function() {
+                var img1 = document.getElementById('img1');
+                img1.style.display = "none"
+                // $('#img1').fadeOut();
+            }, 1300);
+            setTimeout(function() {
+                $('#showImg2').fadeIn();
+                }, 1500);
+            setTimeout(function() {
+                var img2 = document.getElementById('img2');
+                img2.style.display = "block"
+                $('#img2').fadeIn(500);
+            }, 1500);
+            setTimeout(function() {
+                $('#showImg3').fadeIn();
+                }, 2500);
+            setTimeout(function() {
+                var img2 = document.getElementById('img2');
+                img2.style.display = "none"
+                // $('#img2').fadeOut();
+            }, 2400);
+            setTimeout(function() {
+                $('#showImg4').fadeIn();
+                }, 3500);
+            setTimeout(function() {
+                var img3 = document.getElementById('img3');
+                img3.style.display = "block"
+                // $('#img3').fadeIn();
+            }, 2500);
+            setTimeout(function() {
+                var img3 = document.getElementById('img3');
+                img3.style.display = "none"
+                // $('#img3').fadeOut();
+            }, 3400);
+            setTimeout(function() {
+                var img4 = document.getElementById('img4');
+                img4.style.display = "block"
+                // $('#img4').fadeIn();
+            }, 3500);
+        },
+        methods: {
+            goBack() {
+                window.location.href="https://www.qq.com/"
+            }
+        }
+      });
+
+      // 调用函数组件，弹出一个 Toast
+
+      // 通过 CDN 引入时不会自动注册 Lazyload 组件
+      // 可以通过下面的方式手动注册
+      Vue.use(vant.Popup);
+      Vue.use(vant.Loading);
+      Vue.use(vant.Cell);
+      Vue.use(vant.CellGroup);
+      Vue.use(vant.Button);
+      Vue.use(vant.Toast);
+      Vue.use(vant.Dialog);
+    </script>
+  </body>
+</html>
